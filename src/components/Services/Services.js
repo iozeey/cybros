@@ -45,7 +45,7 @@ export default function Services(props) {
             <Card className={classes.card}>
               <CardMedia
                 className={classes.media}
-                image={require("../../assets/portfolio/" + post.img)}
+                image={require("assets/portfolio/" + post.img)}
                 title={post.title}
               />
               <CardActions className={classes.titlebg} disableSpacing>

@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
-import Services from "./components/Services/Services"
+import Services from "components/Services/Services"
 const useStyles = makeStyles((theme) => ({
   root: {
     backgroundImage: "linear-gradient(to left,#60AFFF 10%,#301140 99%)",

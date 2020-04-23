@@ -5,7 +5,7 @@ import { Container } from "@material-ui/core";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Link from "@material-ui/core/Link";
-import logo from "../assets/img/logo.png";
+import logo from "assets/img/logo.png";
 const useStyles = makeStyles((theme) => ({
   root: {
     backgroundImage: 'linear-gradient(to left,#60AFFF 10%,#301140 99%)',

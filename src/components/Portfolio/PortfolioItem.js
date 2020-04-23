@@ -31,7 +31,7 @@ export default function PortfolioItem(props) {
           <Card className={classes.root}>
             <CardMedia
               className={classes.media}
-              image={require("../../assets/portfolio/" + portfolio.img)}
+              image={require("assets/portfolio/" + portfolio.img)}
               title={portfolio.title}
             />
           </Card>
