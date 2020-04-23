@@ -5,45 +5,59 @@ import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import PortfolioItem from "./components/Portfolio/PortfolioItem";
+import banner from "./assets/img/orange-banner.png";
+
 const useStyles = makeStyles((theme) => ({
   root: {
-    backgroundColor: "#FB9E33",
+    // backgroundColor: "#FB9E33",
+    backgroundImage: `url(${banner})`,
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center",
     color: theme.palette.background.paper,
-    padding: theme.spacing(4, 0),
+    padding: theme.spacing(8, 0),
   },
   my20: {
     margin: theme.spacing(3),
   },
 }));
 
+const portfolioItems = [
+  { title: "logo1", img: "p1.png" },
+  { title: "logo2", img: "p4.png" },
+  { title: "logo3", img: "p1.png" },
+  { title: "logo4", img: "p3.png" },
+  { title: "logo5", img: "p2.png" },
+  { title: "logo6", img: "p5.png" },
+];
 export default function Portfolio(props) {
   const classes = useStyles();
   const { title, description } = props;
   return (
-    <div className={classes.root}>
+    <div id="portfolio" className={classes.root}>
       <Container fixed>
-        <Grid container>
+        <Grid
+          container
+          direction="row"
+          justify="space-between"
+          alignItems="center"
+        >
           <Grid item xs={12}>
             <Typography variant="h3" align="center">
               {title}
             </Typography>
-            <Typography variant="p" color="inherit" className={classes.my20} paragraph>
+            <Typography
+              variant="p"
+              color="inherit"
+              className={classes.my20}
+              paragraph
+            >
               {description}
             </Typography>
           </Grid>
         </Grid>
 
-        <Grid container>
-          <Grid item xs={4}>
-            <PortfolioItem />
-          </Grid>
-          <Grid item xs={4}>
-            <PortfolioItem />
-          </Grid>
-          <Grid item xs={4}>
-            <PortfolioItem />
-          </Grid>
-        </Grid>
+        <PortfolioItem portfolioItem={portfolioItems} />
       </Container>
     </div>
   );

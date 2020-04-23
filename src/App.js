@@ -5,12 +5,11 @@ import Footer from "./components/Footer";
 import Home from "./Home";
 
 const sections = [
-  { title: "Home", url: "#" },
-  { title: "Design", url: "#" },
-  { title: "Development", url: "#" },
-  { title: "Ideas", url: "#" },
-  { title: "About Us", url: "#" },
-  { title: "Contact Us", url: "#" },
+  { title: "Home", url: "#home" },
+  { title: "Design & Development", url: "#development" },
+  { title: "Portfolio", url: "#portfolio" },
+  { title: "About Us", url: "#about" },
+  { title: "Contact Us", url: "#contact" },
 ];
 function App() {
   return (

@@ -4,6 +4,10 @@ import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import MainFeaturedPost from "./components/MainBanner";
 import Portfolio from "./PortfolioPage";
+import About from "./AboutPage";
+import Contact from "./ContactPage";
+// import Design from "./DesignPage";
+import Development from "./DevelopmentPage";
 const useStyles = makeStyles((theme) => ({
   Home: {
     backgroundColor: theme.palette.background.paper,
@@ -39,8 +43,21 @@ export default function Home(props) {
         venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras
         mattis consectetur purus sit amet fermentum.
       </Typography>
+     
+       <Development
+        title="Why Choose Cybros. Development"
+        description="Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum."
+      />
       <Portfolio
         title="Cybros. Development Portfolio"
+        description="Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum."
+      />
+      <About
+        title="About Cybros. Development"
+        description="Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum."
+      />
+      <Contact
+        title="Contact Us"
         description="Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum."
       />
     </div>

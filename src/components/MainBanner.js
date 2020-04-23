@@ -13,6 +13,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.grey[800],
     color: theme.palette.common.white,
     marginBottom: theme.spacing(6),
+    paddingTop: theme.spacing(6),
     backgroundImage: "url(https://source.unsplash.com/random)",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
@@ -42,6 +43,7 @@ export default function MainFeaturedPost(props) {
 
   return (
     <Paper
+      id="home"
       className={classes.mainFeaturedPost}
       style={{ backgroundImage: `url(${post.image})` }}
     >

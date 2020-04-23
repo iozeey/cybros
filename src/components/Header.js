@@ -8,7 +8,7 @@ import Link from "@material-ui/core/Link";
 import logo from "../assets/img/logo.png";
 const useStyles = makeStyles((theme) => ({
   root: {
-    backgroundImage: 'linear-gradient(to left,#60AFFF 10%,#4EF4BD 99%)',
+    backgroundImage: 'linear-gradient(to left,#60AFFF 10%,#301140 99%)',
   },
   toolbar: {
     borderBottom: `1px solid ${theme.palette.divider}`,
