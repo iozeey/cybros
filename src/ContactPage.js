@@ -28,7 +28,7 @@ export default function Contact(props) {
           alignItems="center"
           spacing={6}
         >
-          <Grid item xs={5}>
+          <Grid item xs={12} sm={12} md={6}>
             <Typography variant="h4" align="left">
               {title}
             </Typography>
@@ -36,7 +36,7 @@ export default function Contact(props) {
               {description}
             </Typography>
           </Grid>
-          <Grid item xs={5}>
+          <Grid item xs={12} sm={12} md={6}>
             <ContactForm />
           </Grid>
         </Grid>

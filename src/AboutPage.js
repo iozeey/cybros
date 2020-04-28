@@ -20,7 +20,7 @@ export default function About(props) {
     <div id="about" className={classes.root}>
       <Container fixed>
         <Grid container spacing={6} direction="row-reverse" justify="space-between" alignItems="center">
-          <Grid item xs={5}>
+          <Grid item xs={12} sm={12} md={6} >
             <Typography variant="h4" align="left">
               {title}
             </Typography>
@@ -28,7 +28,7 @@ export default function About(props) {
               {description}
             </Typography>
           </Grid>
-          <Grid item xs={5}>
+          <Grid item xs={12} sm={12} md={6}>
             <img src={AboutUsBanner} alt="" />
           </Grid>
         </Grid>

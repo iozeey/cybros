@@ -17,18 +17,25 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.background.paper,
     padding: theme.spacing(8, 0),
   },
-  my20: {
-    margin: theme.spacing(3),
+  postContent: {
+    [theme.breakpoints.up("sm")]: {
+      padding: theme.spacing(0, 8, 8),
+    },
+    [theme.breakpoints.down("sm")]: {
+      padding: theme.spacing(2),
+    },
   },
 }));
 
 const portfolioItems = [
-  { title: "logo1", img: "p1.png" },
-  { title: "logo2", img: "p4.png" },
-  { title: "logo3", img: "p1.png" },
-  { title: "logo4", img: "p3.png" },
-  { title: "logo5", img: "p2.png" },
-  { title: "logo6", img: "p5.png" },
+  { title: "AlPrints", img: "alprint-we-design-you-logo.png", link: "https://alprints.com/" },
+  { title: "Cmobiler", img: "cmobiler-logo.png", link: "https://cmobiler.com/" },
+  { title: "Fly", img: "fly.png", link: "https://dev.fly.me/" },
+  { title: "tripbuddyapp", img: "tripbuddyapp.png", link: "https://www.thetripbuddyapp.com/" },
+  { title: "InnovationRoundtable", img: "innovation.png", link: "https://innovationroundtable.com/" },
+  { title: "HR-InnovationRoundtable", img: "logo-HR-InnovationRoundtable-h.png", link: "https://innovationroundtable.com/hr/" },
+  { title: "logo6", img: "p5.png", link: "" },
+  { title: "logo6", img: "p5.png", link: "" },
 ];
 export default function Portfolio(props) {
   const classes = useStyles();
@@ -42,18 +49,20 @@ export default function Portfolio(props) {
           justify="space-between"
           alignItems="center"
         >
-          <Grid item xs={12}>
-            <Typography variant="h3" align="center">
-              {title}
-            </Typography>
-            <Typography
-              variant="p"
-              color="inherit"
-              className={classes.my20}
-              paragraph
-            >
-              {description}
-            </Typography>
+          <Grid item md={12}>
+            <div className={classes.postContent}>
+              <Typography variant="h3" align="center">
+                {title}
+              </Typography>
+              <Typography
+                variant="p"
+                color="inherit"
+                className={classes.my20}
+                paragraph
+              >
+                {description}
+              </Typography>
+            </div>
           </Grid>
         </Grid>
 

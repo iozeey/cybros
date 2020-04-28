@@ -16,11 +16,11 @@ const useStyles = makeStyles((theme) => ({
   },
   media: {
     height: 0,
-    backgroundSize: "contain",
+    // backgroundSize: "contain",
     paddingTop: "56.25%", // 16:9
   },
   titlebg: {
-    backgroundImage: "linear-gradient(to left,#cccccc 10%,#301140 99%)",
+    backgroundImage: "linear-gradient(to left,#cccccc 10%,#091930 99%)",
     color: theme.palette.background.paper,
   },
   title: {
@@ -40,12 +40,12 @@ export default function Services(props) {
       alignItems="center"
     >
       {services.map((post) => (
-        <Grid item xs={12} md={3}>
+        <Grid item md={4} sm={6} xs={6}>
           <CardActionArea component="a" href="#">
             <Card className={classes.card}>
               <CardMedia
                 className={classes.media}
-                image={require("assets/portfolio/" + post.img)}
+                image={require("assets/Services/" + post.img)}
                 title={post.title}
               />
               <CardActions className={classes.titlebg} disableSpacing>

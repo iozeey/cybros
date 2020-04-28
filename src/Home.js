@@ -7,27 +7,28 @@ import Portfolio from "./PortfolioPage";
 import About from "./AboutPage";
 import Contact from "./ContactPage";
 // import Design from "./DesignPage";
-import Development from "./DevelopmentPage";
+import Services from "./ServicesPage";
 const useStyles = makeStyles((theme) => ({
   Home: {
     backgroundColor: theme.palette.background.paper,
     // marginTop: theme.spacing(8),
-    paddingTop: theme.spacing(8),
+    // paddingTop: theme.spacing(8),
   },
-  my20: {
-    margin: theme.spacing(3),
+  postContent: {
+    [theme.breakpoints.up("sm")]: {
+      padding: theme.spacing(8),
+    },
+    [theme.breakpoints.down("sm")]: {
+      padding: theme.spacing(2),
+    },
   },
 }));
 
 export default function Home(props) {
   const classes = useStyles();
   const mainFeaturedPost = {
-    title: "Title of a longer featured blog post",
-    description:
-      "Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.",
-    image: "https://source.unsplash.com/random",
-    imgText: "main image description",
-    linkText: "Continue reading…",
+    title: "Web Development Technologies",
+    description: "We offer Multiple Web Development Technologies.",
   };
   return (
     <div className={classes.Home}>
@@ -36,15 +37,15 @@ export default function Home(props) {
         variant="subtitle1"
         align="center"
         component="p"
-        className={classes.my20}
+        className={classes.postContent}
       >
         Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
         ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam
         venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras
         mattis consectetur purus sit amet fermentum.
       </Typography>
-     
-       <Development
+
+      <Services
         title="Why Choose Cybros. Development"
         description="Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum."
       />

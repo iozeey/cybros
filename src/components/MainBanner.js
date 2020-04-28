@@ -6,15 +6,14 @@ import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import Link from "@material-ui/core/Link";
 import Carousel from "./Slider/Carousel";
-
 const useStyles = makeStyles((theme) => ({
   mainFeaturedPost: {
     position: "relative",
     backgroundColor: theme.palette.grey[800],
     color: theme.palette.common.white,
-    marginBottom: theme.spacing(6),
-    paddingTop: theme.spacing(6),
-    backgroundImage: "url(https://source.unsplash.com/random)",
+    // marginBottom: theme.spacing(6),
+    paddingTop: theme.spacing(10),
+    backgroundImage: `url(${require("assets/img/bnr1.jpg")})`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
@@ -29,34 +28,36 @@ const useStyles = makeStyles((theme) => ({
   },
   mainFeaturedPostContent: {
     position: "relative",
-    padding: theme.spacing(6),
-    [theme.breakpoints.up("xs")]: {
-      padding: theme.spacing(6),
-      paddingRight: 0,
+    [theme.breakpoints.up("sm")]: {
+      padding: theme.spacing(12),
+    },
+    [theme.breakpoints.down("sm")]: {
+      padding: theme.spacing(2),
     },
   },
 }));
 
+const technologies = [
+  { title: "Bootstrap", img: "bootstrap-logo.png" },
+  { title: "WordPress", img: "WordPress.svg" },
+  { title: "Material-UI", img: "material.svg" },
+  { title: "React-JS", img: "react.svg" },
+  { title: "Node-JS", img: "nodejs.png" },
+  { title: "Rails", img: "rails.png" },
+  { title: "Storybook", img: "storybook.png" },
+  { title: "PHP", img: "php-logo.png" },
+  { title: "GIT", img: "git.png" },
+  { title: "SEO", img: "SEO.svg" },
+  { title: "HTML5", img: "HTML5_oval_logo.png" },
+  { title: "VUE", img: "vue.jpg" },
+];
 export default function MainFeaturedPost(props) {
   const classes = useStyles();
   const { post } = props;
 
   return (
-    <Paper
-      id="home"
-      className={classes.mainFeaturedPost}
-      style={{ backgroundImage: `url(${post.image})` }}
-    >
-      {/* Increase the priority of the hero background image */}
-      {
-        <img
-          style={{ display: "none" }}
-          src={post.image}
-          alt={post.imageText}
-        />
-      }
-      <div className={classes.overlay} />
-      <Grid container>
+    <Paper id="home" className={classes.mainFeaturedPost}>
+      <Grid container spacing={0}>
         <Grid item xs={12}>
           <div className={classes.mainFeaturedPostContent}>
             <Typography
@@ -74,7 +75,7 @@ export default function MainFeaturedPost(props) {
               {post.linkText}
             </Link>
           </div>
-          <Carousel title="main-carousel" />
+          <Carousel title="main-carousel" technologies={technologies} />
         </Grid>
       </Grid>
     </Paper>

@@ -6,7 +6,7 @@ import Home from "./Home";
 
 const sections = [
   { title: "Home", url: "#home" },
-  { title: "Design & Development", url: "#development" },
+  { title: "Our Services", url: "#services" },
   { title: "Portfolio", url: "#portfolio" },
   { title: "About Us", url: "#about" },
   { title: "Contact Us", url: "#contact" },

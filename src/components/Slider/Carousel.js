@@ -5,7 +5,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import logo from "../../assets/img/logo.jpeg";
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
@@ -33,28 +32,28 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "rgba(0,0,0,.3)",
     padding: theme.spacing(6, 0),
     "& .slick-prev": {
-        left: '35px',
+      left: "35px",
     },
     "& .slick-next": {
-        right: '35px',
+      right: "35px",
     },
     "& .slick-arrow": {
-        backgroundColor: theme.palette.background.paper,
-        zIndex: 1,
-        width: '60px',
-        height: '60px',
-        borderRadius: '50%',
-        boxShadow: '0 0 4px 1px #333',
+      backgroundColor: theme.palette.background.paper,
+      zIndex: 1,
+      width: "60px",
+      height: "60px",
+      borderRadius: "50%",
+      boxShadow: "0 0 4px 1px #333",
     },
     "& .slick-prev:before, .slick-next:before": {
-        color: '#333',
-        lineHeight: 3,
+      color: "#333",
+      lineHeight: 3,
     },
     "& .slick-current": {
-        transform: 'scale(1.15)',
+      transform: "scale(1.15)",
     },
     "& .slick-current div.carousel-item-inner": {
-        boxShadow: '0 0 4px 0 #000',
+      boxShadow: "0 0 4px 0 #000",
     },
     "& img": {
       margin: "0 auto",
@@ -64,7 +63,8 @@ const useStyles = makeStyles((theme) => ({
     },
     "& div.carousel-item-inner": {
       width: "200px",
-      padding: theme.spacing(6, 2),
+      height: "80px",
+      padding: theme.spacing(4, 2),
       margin: theme.spacing(2, "auto"),
       color: "#333",
       borderRadius: "4px",
@@ -75,7 +75,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Carousel(props) {
   const classes = useStyles();
-  const { title } = props;
+  const { title, technologies } = props;
   var settings = {
     className: "center",
     centerMode: true,
@@ -84,6 +84,7 @@ export default function Carousel(props) {
     centerPadding: "60px",
     speed: 500,
     slidesToShow: 5,
+    autoplay: true,
     nextArrow: <SampleNextArrow className="btn-next" />,
     prevArrow: <SamplePrevArrow className="btn-prev" />,
     responsive: [
@@ -116,41 +117,13 @@ export default function Carousel(props) {
   return (
     <Container className={classes.mainCarousel} maxWidth="xl">
       <Slider title={title} {...settings}>
-        <div className="carousel-item">
-          <div className="carousel-item-inner">
-          <img src={logo} alt={title} />
+        {technologies.map((tech) => (
+          <div className="carousel-item">
+            <div className="carousel-item-inner">
+              <img src={require("assets/Technologies/" + tech.img)} alt={tech.title} />
+            </div>
           </div>
-        </div>
-        <div className="carousel-item">
-          <div className="carousel-item-inner">
-          <img src={logo} alt={title} />
-          </div>
-        </div>
-        <div className="carousel-item">
-          <div className="carousel-item-inner">
-          <img src={logo} alt={title} />
-          </div>
-        </div>
-        <div className="carousel-item">
-          <div className="carousel-item-inner">
-          <img src={logo} alt={title} />
-          </div>
-        </div>
-        <div className="carousel-item">
-          <div className="carousel-item-inner">
-          <img src={logo} alt={title} />
-          </div>
-        </div>
-        <div className="carousel-item">
-          <div className="carousel-item-inner">
-          <img src={logo} alt={title} />
-          </div>
-        </div>
-        <div className="carousel-item">
-          <div className="carousel-item-inner">
-          <img src={logo} alt={title} />
-          </div>
-        </div>
+        ))}
       </Slider>
     </Container>
   );

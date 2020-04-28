@@ -2,13 +2,18 @@ import React from "react";
 import PropTypes from "prop-types";
 import { makeStyles } from "@material-ui/core/styles";
 import { Container } from "@material-ui/core";
+import Grid from "@material-ui/core/Grid";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Link from "@material-ui/core/Link";
 import logo from "assets/img/logo.png";
 const useStyles = makeStyles((theme) => ({
+  header: {
+    backgroundColor: "transparent",
+    // backgroundImage: "linear-gradient(to left,#091930 10%,#132C40 99%)",
+  },
   root: {
-    backgroundImage: 'linear-gradient(to left,#60AFFF 10%,#301140 99%)',
+    padding: theme.spacing(0),
   },
   toolbar: {
     borderBottom: `1px solid ${theme.palette.divider}`,
@@ -20,6 +25,7 @@ const useStyles = makeStyles((theme) => ({
   toolbarSecondary: {
     justifyContent: "space-between",
     overflowX: "auto",
+    flex: 1,
   },
   toolbarLink: {
     padding: theme.spacing(1),
@@ -32,13 +38,22 @@ export default function Header(props) {
   const { sections, title } = props;
 
   return (
-    <React.Fragment>
-      <AppBar position="fixed" className={classes.root}>
-        <Container fixed>
-          <Toolbar className={classes.toolbar}>
-            <div className={classes.toolbarLogo}>
-              <img src={logo} alt={title} />
-            </div>
+    <AppBar position="fixed" className={`${classes.header} ${classes.root}`}>
+      <Container fixed className={classes.root}>
+        <Grid
+          container
+          direction="row"
+          justify="space-between"
+          alignItems="center"
+        >
+          <Grid item md={6} sm={12}>
+            <Toolbar className={classes.toolbar}>
+              <div className={classes.toolbarLogo}>
+                <img src={logo} alt={title} />
+              </div>
+            </Toolbar>
+          </Grid>
+          <Grid item md={6} sm={12}>
             <Toolbar
               component="nav"
               variant="dense"
@@ -58,10 +73,10 @@ export default function Header(props) {
                 </Link>
               ))}
             </Toolbar>
-          </Toolbar>
-        </Container>
-      </AppBar>
-    </React.Fragment>
+          </Grid>
+        </Grid>
+      </Container>
+    </AppBar>
   );
 }
 
