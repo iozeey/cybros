@@ -12,6 +12,12 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(8, 0),
     color: theme.palette.background.paper,
   },
+  title: {
+    fontFamily: "vester-medium",
+  },
+  description:{
+    fontFamily: "monospace",
+  }
 }));
 
 export default function Contact(props) {
@@ -29,10 +35,10 @@ export default function Contact(props) {
           spacing={6}
         >
           <Grid item xs={12} sm={12} md={6}>
-            <Typography variant="h4" align="left">
+            <Typography variant="h4" align="left" className={classes.title}>
               {title}
             </Typography>
-            <Typography component="p" align="left">
+            <Typography component="p" align="left" className={classes.description}>
               {description}
             </Typography>
           </Grid>

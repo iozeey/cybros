@@ -28,6 +28,7 @@ const useStyles = makeStyles((theme) => ({
   },
   mainFeaturedPostContent: {
     position: "relative",
+    fontFamily: "vester-light",
     [theme.breakpoints.up("sm")]: {
       padding: theme.spacing(12),
     },
@@ -35,21 +36,26 @@ const useStyles = makeStyles((theme) => ({
       padding: theme.spacing(2),
     },
   },
+  title:{
+    fontFamily: "vester-poster",
+  }
 }));
 
 const technologies = [
-  { title: "Bootstrap", img: "bootstrap-logo.png" },
-  { title: "WordPress", img: "WordPress.svg" },
-  { title: "Material-UI", img: "material.svg" },
   { title: "React-JS", img: "react.svg" },
   { title: "Node-JS", img: "nodejs.png" },
   { title: "Rails", img: "rails.png" },
+  { title: "VUE", img: "vue.jpg" },
+  { title: "WordPress", img: "WordPress.svg" },
+  { title: "Material-UI", img: "material.svg" },
+  { title: "Bootstrap", img: "bootstrap-logo.png" },
   { title: "Storybook", img: "storybook.png" },
+  { title: "Laravel", img: "laravel.min.svg" },
   { title: "PHP", img: "php-logo.png" },
+  { title: "Automation", img: "testcafe.png" },
   { title: "GIT", img: "git.png" },
   { title: "SEO", img: "SEO.svg" },
   { title: "HTML5", img: "HTML5_oval_logo.png" },
-  { title: "VUE", img: "vue.jpg" },
 ];
 export default function MainFeaturedPost(props) {
   const classes = useStyles();
@@ -65,6 +71,7 @@ export default function MainFeaturedPost(props) {
               variant="h3"
               color="inherit"
               gutterBottom
+              className={classes.title}
             >
               {post.title}
             </Typography>

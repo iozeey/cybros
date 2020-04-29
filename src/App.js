@@ -18,7 +18,7 @@ function App() {
         <Home />
         <Footer
           title="Cybros. Development"
-          description="Something here to give the footer a purpose!"
+          description="All Rights Reserved | Powered by Cybros Developers | Dynamic solution provider"
         />
     </div>
   );

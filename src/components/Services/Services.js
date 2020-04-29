@@ -20,11 +20,12 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: "56.25%", // 16:9
   },
   titlebg: {
-    backgroundImage: "linear-gradient(to left,#cccccc 10%,#091930 99%)",
+    backgroundImage: "linear-gradient(to left,#175370 10%,#091930 99%);",
     color: theme.palette.background.paper,
   },
   title: {
     flex: 1,
+    fontFamily: "vester-medium",
   },
 }));
 

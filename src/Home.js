@@ -11,10 +11,10 @@ import Services from "./ServicesPage";
 const useStyles = makeStyles((theme) => ({
   Home: {
     backgroundColor: theme.palette.background.paper,
-    // marginTop: theme.spacing(8),
-    // paddingTop: theme.spacing(8),
   },
   postContent: {
+    backgroundImage: "linear-gradient(to left,#60AFFF 10%,#4EF4BD 99%)",
+    fontFamily: "monospace",
     [theme.breakpoints.up("sm")]: {
       padding: theme.spacing(8),
     },
@@ -27,8 +27,8 @@ const useStyles = makeStyles((theme) => ({
 export default function Home(props) {
   const classes = useStyles();
   const mainFeaturedPost = {
-    title: "Web Development Technologies",
-    description: "We offer Multiple Web Development Technologies.",
+    title: "To Bring your ideas into Reality",
+    description: "We offer Dynamic solutions in various Technologies.",
   };
   return (
     <div className={classes.Home}>
@@ -36,30 +36,31 @@ export default function Home(props) {
       <Typography
         variant="subtitle1"
         align="center"
-        component="p"
         className={classes.postContent}
+        variant="h6"
       >
-        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-        ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam
-        venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras
-        mattis consectetur purus sit amet fermentum.
+        Our proven techniques used in the past projects give us confidence in
+        the quality and effectiveness of our design, development and deployment
+        processes.
       </Typography>
 
       <Services
-        title="Why Choose Cybros. Development"
-        description="Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum."
+        title="Why Choose Cybros. Developers"
+        description="CONVERT YOUR CONCEPT TO DIGITAL REALITY IN WEB or MOBILE SOFTWARE DEVELOPMENT, we create efficient and easy to use products that bring your ideas to life, delight your users and help you achieve your goals."
       />
       <Portfolio
         title="Cybros. Development Portfolio"
-        description="Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum."
+        description="Recent Projects We've Completed For Our Clients"
       />
       <About
         title="About Cybros. Development"
-        description="Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum."
+        description="Cybros's mission is to convert thoughts into computer world and make them automate. Cybros developer specializes in the research and development of innovative Business Intelligence solutions."
       />
       <Contact
         title="Contact Us"
-        description="Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum."
+        description="Fill out the form and our team will be in touch with you promptly. Thank you for your interest!
+        at Cybros Developers Dynamic solution provider
+        Email: contact@cybros.dev"
       />
     </div>
   );

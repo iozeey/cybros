@@ -10,7 +10,7 @@ import logo from "assets/img/logo.png";
 const useStyles = makeStyles((theme) => ({
   header: {
     backgroundColor: "transparent",
-    // backgroundImage: "linear-gradient(to left,#091930 10%,#132C40 99%)",
+    backgroundImage: "linear-gradient(to left,#091930 10%,#132C40 99%)",
   },
   root: {
     padding: theme.spacing(0),
@@ -30,6 +30,9 @@ const useStyles = makeStyles((theme) => ({
   toolbarLink: {
     padding: theme.spacing(1),
     flexShrink: 0,
+    fontSize: "1rem",
+    fontWeight: "700",
+    fontFamily: "monospace"
   },
 }));
 

@@ -24,6 +24,12 @@ const useStyles = makeStyles((theme) => ({
       padding: theme.spacing(2),
     },
   },
+  title: {
+    fontFamily: "vester-medium",
+  },
+  description:{
+    fontFamily: "monospace",
+  }
 }));
 
 const services = [
@@ -50,10 +56,10 @@ export default function Development(props) {
         >
           <Grid item xs={12}>
             <div className={classes.postContent}>
-              <Typography variant="h4" align="">
+              <Typography variant="h4" align="" className={classes.title}>
                 {title}
               </Typography>
-              <Typography component="p" align="">
+              <Typography component="p" align="" className={classes.description}>
                 {description}
               </Typography>
             </div>

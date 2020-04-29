@@ -24,7 +24,13 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       padding: theme.spacing(2),
     },
+  },  
+  title: {
+    fontFamily: "vester-medium",
   },
+  description:{
+    fontFamily: "monospace",
+  }
 }));
 
 const portfolioItems = [
@@ -51,7 +57,7 @@ export default function Portfolio(props) {
         >
           <Grid item md={12}>
             <div className={classes.postContent}>
-              <Typography variant="h3" align="center">
+              <Typography variant="h3" align="center" className={classes.title}>
                 {title}
               </Typography>
               <Typography
@@ -59,6 +65,7 @@ export default function Portfolio(props) {
                 color="inherit"
                 className={classes.my20}
                 paragraph
+                className={classes.description}
               >
                 {description}
               </Typography>
