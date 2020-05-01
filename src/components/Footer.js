@@ -4,12 +4,13 @@ import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Link from "@material-ui/core/Link";
 import logo from "assets/img/logo.jpeg";
-function Copyright() {
+function Copyright(props) {
+  const { title } = props;
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {"Copyright © "}
       <Link color="inherit" href="https://cybros.dev/">
-        cybros.dev
+        {title}
       </Link>{" "}
       {new Date().getFullYear()}
       {"."}
@@ -20,18 +21,17 @@ function Copyright() {
 const useStyles = makeStyles((theme) => ({
   root: {
     backgroundColor: theme.palette.background.paper,
-    // marginTop: theme.spacing(8),
-    paddingBottom: theme.spacing(6),
+    padding: theme.spacing(6, 0),
   },
 }));
 
 export default function Footer(props) {
   const classes = useStyles();
-  const { description, title } = props;
+  const { description, themeTitle } = props;
 
   return (
     <footer className={classes.root}>
-      <img src={logo} alt={title} />
+      <img src={logo} alt={themeTitle} title={themeTitle} />
       <hr />
       <Typography
         variant="subtitle1"
@@ -41,12 +41,12 @@ export default function Footer(props) {
       >
         {description}
       </Typography>
-      <Copyright />
+      <Copyright title={themeTitle} />
     </footer>
   );
 }
 
 Footer.propTypes = {
   description: PropTypes.string,
-  title: PropTypes.string,
+  themeTitle: PropTypes.string,
 };

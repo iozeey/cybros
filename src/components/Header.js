@@ -1,43 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { makeStyles } from "@material-ui/core/styles";
 import { Container } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Link from "@material-ui/core/Link";
 import logo from "assets/img/logo.png";
-const useStyles = makeStyles((theme) => ({
-  header: {
-    backgroundColor: "transparent",
-    backgroundImage: "linear-gradient(to left,#091930 10%,#132C40 99%)",
-  },
-  root: {
-    padding: theme.spacing(0),
-  },
-  toolbar: {
-    borderBottom: `1px solid ${theme.palette.divider}`,
-  },
-  toolbarLogo: {
-    flex: 1,
-    display: "flex",
-  },
-  toolbarSecondary: {
-    justifyContent: "space-between",
-    overflowX: "auto",
-    flex: 1,
-  },
-  toolbarLink: {
-    padding: theme.spacing(1),
-    flexShrink: 0,
-    fontSize: "1rem",
-    fontWeight: "700",
-    fontFamily: "monospace"
-  },
-}));
+import useHeaderStyles from "../assets/css/_header";
 
 export default function Header(props) {
-  const classes = useStyles();
+  const classes = useHeaderStyles();
   const { sections, title } = props;
 
   return (

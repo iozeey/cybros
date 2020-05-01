@@ -1,50 +1,14 @@
 import React from "react";
 import { Container } from "@material-ui/core";
 import PropTypes from "prop-types";
-import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import PortfolioItem from "./components/Portfolio/PortfolioItem";
-import banner from "./assets/img/orange-banner.png";
+import usePortfolioStyles from "./assets/css/_portfolio";
+import { portfolioItems } from "./components/theme/dataset";
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    // backgroundColor: "#FB9E33",
-    backgroundImage: `url(${banner})`,
-    backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: "center",
-    color: theme.palette.background.paper,
-    padding: theme.spacing(8, 0),
-  },
-  postContent: {
-    [theme.breakpoints.up("sm")]: {
-      padding: theme.spacing(0, 8, 8),
-    },
-    [theme.breakpoints.down("sm")]: {
-      padding: theme.spacing(2),
-    },
-  },  
-  title: {
-    fontFamily: "vester-medium",
-  },
-  description:{
-    fontFamily: "monospace",
-  }
-}));
-
-const portfolioItems = [
-  { title: "AlPrints", img: "alprint-we-design-you-logo.png", link: "https://alprints.com/" },
-  { title: "Cmobiler", img: "cmobiler-logo.png", link: "https://cmobiler.com/" },
-  { title: "Fly", img: "fly.png", link: "https://dev.fly.me/" },
-  { title: "tripbuddyapp", img: "tripbuddyapp.png", link: "https://www.thetripbuddyapp.com/" },
-  { title: "InnovationRoundtable", img: "innovation.png", link: "https://innovationroundtable.com/" },
-  { title: "HR-InnovationRoundtable", img: "logo-HR-InnovationRoundtable-h.png", link: "https://innovationroundtable.com/hr/" },
-  { title: "logo6", img: "p5.png", link: "" },
-  { title: "logo6", img: "p5.png", link: "" },
-];
 export default function Portfolio(props) {
-  const classes = useStyles();
+  const classes = usePortfolioStyles();
   const { title, description } = props;
   return (
     <div id="portfolio" className={classes.root}>
@@ -54,6 +18,7 @@ export default function Portfolio(props) {
           direction="row"
           justify="space-between"
           alignItems="center"
+          spacing={0}
         >
           <Grid item md={12}>
             <div className={classes.postContent}>
@@ -63,7 +28,6 @@ export default function Portfolio(props) {
               <Typography
                 variant="p"
                 color="inherit"
-                className={classes.my20}
                 paragraph
                 className={classes.description}
               >

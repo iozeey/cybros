@@ -41,7 +41,7 @@ export default function Services(props) {
       alignItems="center"
     >
       {services.map((post) => (
-        <Grid item md={4} sm={6} xs={6}>
+        <Grid item md={4} sm={6} xs={12}>
           <CardActionArea component="a" href="#">
             <Card className={classes.card}>
               <CardMedia

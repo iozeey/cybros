@@ -1,49 +1,46 @@
 import React from "react";
 import { Container } from "@material-ui/core";
 import PropTypes from "prop-types";
-import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import ContactForm from "components/Forms/ContactForm";
-const useStyles = makeStyles((theme) => ({
-  root: {
-    backgroundImage: "linear-gradient(to left,#cccccc 10%,#301140 99%)",
-    marginBottom: theme.spacing(4),
-    padding: theme.spacing(8, 0),
-    color: theme.palette.background.paper,
-  },
-  title: {
-    fontFamily: "vester-medium",
-  },
-  description:{
-    fontFamily: "monospace",
-  }
-}));
+import useContactStyles from "./assets/css/_contact";
 
 export default function Contact(props) {
-  const classes = useStyles();
+  const classes = useContactStyles();
   const { description, title } = props;
 
   return (
     <div id="contact" className={classes.root}>
-      <Container fixed>
+      <Container className={classes.root} maxWidth="false">
         <Grid
           container
           direction="row"
           justify="space-between"
           alignItems="center"
-          spacing={6}
+          spacing={0}
         >
-          <Grid item xs={12} sm={12} md={6}>
-            <Typography variant="h4" align="left" className={classes.title}>
-              {title}
-            </Typography>
-            <Typography component="p" align="left" className={classes.description}>
-              {description}
-            </Typography>
+          <Grid item xs={12} sm={12} md={6} className={classes.contactLeft}>
+            <div className="content-bg">
+              <div className="content-inner">
+                <Typography variant="h2" align="left" className={classes.title}>
+                  {title}
+                </Typography>
+                <Typography
+                  component="p"
+                  variant="subtitle1"
+                  align="left"
+                  className={classes.description}
+                >
+                  {description}
+                </Typography>
+              </div>
+            </div>
           </Grid>
-          <Grid item xs={12} sm={12} md={6}>
-            <ContactForm />
+          <Grid item xs={12} sm={12} md={6} className={classes.contactRight}>
+            <div className="content-bg">
+              <ContactForm />
+            </div>
           </Grid>
         </Grid>
       </Container>
