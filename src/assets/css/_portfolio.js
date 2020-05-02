@@ -9,7 +9,7 @@ const usePortfolioStyles = makeStyles((theme) => ({
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     color: theme.palette.background.paper,
-    padding: theme.spacing(8, 0),
+    padding: theme.spacing(10, 0),
   },
   postContent: {
     [theme.breakpoints.up("sm")]: {
@@ -18,12 +18,33 @@ const usePortfolioStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       padding: theme.spacing(2),
     },
-  },  
-  title: {
-    fontFamily: "vester-medium",
   },
-  description:{
+  mainTitle: {
+    fontFamily: "vester-medium",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "1.25rem",
+      lineHeight: "1.5",
+      borderBottom: "1px dashed #fff",
+      paddingBottom: theme.spacing(2),
+      marginBottom: theme.spacing(2),
+
+    },
+  },
+  description: {
     fontFamily: "monospace",
-  }
+  },
+  portfolioItem: {
+    [theme.breakpoints.up("sm")]: {
+      padding: theme.spacing(4),
+    },
+    [theme.breakpoints.down("sm")]: {
+      padding: theme.spacing(4),
+    },
+  },
+  media: {
+    height: 0,
+    backgroundSize: "contain",
+    paddingTop: "36.25%", // 16:9
+  },
 }));
 export default usePortfolioStyles;

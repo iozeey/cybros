@@ -4,7 +4,7 @@ const useContactStyles = makeStyles((theme) => ({
   root: {
     backgroundImage: "linear-gradient(to left,#25a8c4 10%,#25a8c4 99%)",
     marginBottom: theme.spacing(0),
-    padding: theme.spacing(0, 0),
+    padding: theme.spacing(5, 0, 0),
     color: theme.palette.background.paper,
     position: "relative",
   },
@@ -17,7 +17,10 @@ const useContactStyles = makeStyles((theme) => ({
       padding: theme.spacing(12, 0),
       },
       [theme.breakpoints.down("md")]: {
-        padding: theme.spacing(4),
+        padding: theme.spacing(6, 0),
+      },
+      [theme.breakpoints.down("sm")]: {
+        padding: theme.spacing(6),
       },
       backgroundRepeat: "no-repeat",
       backgroundSize: "cover",
@@ -32,13 +35,13 @@ const useContactStyles = makeStyles((theme) => ({
     position: "relative",
     "& .content-bg": {
       [theme.breakpoints.up("md")]: {
-        padding: theme.spacing(12, 0),
+        padding: theme.spacing(8, 0),
         marginRight: "-40px",
         borderTopRightRadius: "8px",
         borderBottomRightRadius: "8px",
       },
       [theme.breakpoints.down("md")]: {
-        padding: theme.spacing(4),
+        padding: theme.spacing(6),
       },
       zIndex: 2,
       position: "relative",
@@ -72,8 +75,12 @@ const useContactStyles = makeStyles((theme) => ({
   },
   title: {
     fontFamily: "vester-medium",
-    [theme.breakpoints.down("xs")]: {
+    [theme.breakpoints.down("sm")]: {
       fontSize: '2rem',
+      borderBottom: "1px dashed #fff",
+      paddingBottom: theme.spacing(2),
+      marginBottom: theme.spacing(2),
+
     },
   },
   description: {

@@ -5,7 +5,7 @@ import Grid from "@material-ui/core/Grid";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Link from "@material-ui/core/Link";
-import logo from "assets/img/logo.png";
+import logo from "assets/img/nextlogo.png";
 import useHeaderStyles from "../assets/css/_header";
 
 export default function Header(props) {
@@ -20,15 +20,16 @@ export default function Header(props) {
           direction="row"
           justify="space-between"
           alignItems="center"
+          spacing={0}
         >
-          <Grid item md={6} sm={12}>
+          <Grid item md={6} sm={4} xs={12}>
             <Toolbar className={classes.toolbar}>
               <div className={classes.toolbarLogo}>
-                <img src={logo} alt={title} />
+                <img src={logo} alt={title} height="60" />
               </div>
             </Toolbar>
           </Grid>
-          <Grid item md={6} sm={12}>
+          <Grid item md={6} sm={8} xs={12}>
             <Toolbar
               component="nav"
               variant="dense"

@@ -7,6 +7,12 @@ const useAboutUsStyles = makeStyles((theme) => ({
   },
   title: {
     fontFamily: "vester-medium",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: '2rem',
+      borderBottom: "1px dashed #fff",
+      paddingBottom: theme.spacing(2),
+      marginBottom: theme.spacing(2),
+    },
   },
   description: {
     fontFamily: "monospace",

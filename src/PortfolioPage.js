@@ -15,18 +15,19 @@ export default function Portfolio(props) {
       <Container fixed>
         <Grid
           container
+          spacing={0}
           direction="row"
           justify="space-between"
           alignItems="center"
-          spacing={0}
         >
-          <Grid item md={12}>
+          <Grid item xs={12}>
             <div className={classes.postContent}>
-              <Typography variant="h3" align="center" className={classes.title}>
+              <Typography variant="h4" align="center" className={classes.mainTitle}>
                 {title}
               </Typography>
               <Typography
-                variant="p"
+                variant="subtitle1"
+                component="p"
                 color="inherit"
                 paragraph
                 className={classes.description}

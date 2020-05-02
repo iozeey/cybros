@@ -23,7 +23,7 @@ export default function Development(props) {
         >
           <Grid item xs={12}>
             <div className={classes.postContent}>
-              <Typography variant="h4" align="" className={classes.title}>
+              <Typography variant="h4" align="center" className={classes.mainTitle}>
                 {title}
               </Typography>
               <Typography
