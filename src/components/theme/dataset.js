@@ -39,30 +39,50 @@ export const technologies = [
 export const portfolioItems = [
   {
     title: "AlPrints",
-    img: "alprint-we-design-you-logo.png",
+    logo: "alprint-we-design-you-logo.png",
+    images: ["tripbuddyapp.png", "cmobiler-logo.png", "alprint-we-design-you-logo.png"],
     link: "https://alprints.com/",
   },
   {
     title: "Cmobiler",
-    img: "cmobiler-logo.png",
+    logo: "cmobiler-logo.png",
+    images: ["cmobiler-logo.png", "alprint-we-design-you-logo.png"],
     link: "https://cmobiler.com/",
   },
-  { title: "Fly", img: "fly.png", link: "https://dev.fly.me/" },
+  {
+    title: "Fly",
+    logo: "fly.png",
+    images: ["cmobiler-logo.png", "alprint-we-design-you-logo.png"],
+    link: "https://dev.fly.me/",
+  },
   {
     title: "tripbuddyapp",
-    img: "tripbuddyapp.png",
+    logo: "tripbuddyapp.png",
+    images: ["cmobiler-logo.png", "alprint-we-design-you-logo.png"],
     link: "https://www.thetripbuddyapp.com/",
   },
   {
     title: "InnovationRoundtable",
-    img: "innovation.png",
+    logo: "innovation.png",
+    images: ["cmobiler-logo.png", "alprint-we-design-you-logo.png"],
     link: "https://innovationroundtable.com/",
   },
   {
     title: "HR-InnovationRoundtable",
-    img: "logo-HR-InnovationRoundtable-h.png",
+    logo: "logo-HR-InnovationRoundtable-h.png",
+    images: ["cmobiler-logo.png", "alprint-we-design-you-logo.png"],
     link: "https://innovationroundtable.com/hr/",
   },
-  { title: "logo6", img: "p5.png", link: "" },
-  { title: "logo6", img: "p5.png", link: "" },
+  {
+    title: "logo6",
+    logo: "p5.png",
+    images: ["cmobiler-logo.png", "alprint-we-design-you-logo.png"],
+    link: "",
+  },
+  {
+    title: "logo6",
+    logo: "p5.png",
+    images: ["cmobiler-logo.png", "alprint-we-design-you-logo.png"],
+    link: "",
+  },
 ];
