@@ -26,7 +26,7 @@ const useCarouselStyles = makeStyles((theme) => ({
       lineHeight: 3,
     },
     "& .slick-current": {
-      transform: "scale(1.25)",
+      transform: "scale(1.20)",
     },
     "& .slick-current div.carousel-item-inner": {
       boxShadow: "0 0 4px 0 #000",
@@ -45,7 +45,7 @@ const useCarouselStyles = makeStyles((theme) => ({
       //   margin: theme.spacing(2),
     },
     "& div.carousel-item-inner": {
-      maxWidth: "260px",
+      maxWidth: "230px",
       height: "80px",
       position: "relative",
       display: "flex !important",
