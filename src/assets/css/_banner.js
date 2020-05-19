@@ -11,6 +11,7 @@ const useBannerStyles = makeStyles((theme) => ({
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
+    borderRadius: 0,
   },
   overlay: {
     position: "absolute",

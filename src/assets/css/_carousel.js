@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 const useCarouselStyles = makeStyles((theme) => ({
   mainCarousel: {
     backgroundColor: "rgba(0,0,0,.3)",
-    padding: theme.spacing(6, 0),
+    padding: theme.spacing(6, 0, 12),
     "& .slick-prev": {
       left: "35px",
     },

@@ -40,12 +40,14 @@ export default function Home(props) {
         <Grid item xs={12} sm={12} md={6}>
           <img src={AboutUsBanner} alt="" />
         </Grid>
+        <Grid item xs={12}>
+          <Services
+            title="Why Choose Cybros. Developers"
+            description="CONVERT YOUR CONCEPT TO DIGITAL REALITY IN WEB or MOBILE SOFTWARE DEVELOPMENT, we create efficient and easy to use products that bring your ideas to life, delight your users and help you achieve your goals."
+          />
+        </Grid>
       </Grid>
 
-      <Services
-        title="Why Choose Cybros. Developers"
-        description="CONVERT YOUR CONCEPT TO DIGITAL REALITY IN WEB or MOBILE SOFTWARE DEVELOPMENT, we create efficient and easy to use products that bring your ideas to life, delight your users and help you achieve your goals."
-      />
       <Portfolio
         title={`${themeTitle} Portfolio`}
         description="Recent Projects We've Completed For Our Clients"
