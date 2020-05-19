@@ -6,26 +6,46 @@ import Portfolio from "./PortfolioPage";
 import About from "./AboutPage";
 import Contact from "./ContactPage";
 import Services from "./ServicesPage";
-import useHomeStyles from "./assets/css/_home"
+import useHomeStyles from "./assets/css/_home";
 import { mainFeaturedPost } from "./components/theme/dataset";
+import Grid from "@material-ui/core/Grid";
+import AboutUsBanner from "assets/img/web-development.png";
 
 export default function Home(props) {
   const classes = useHomeStyles();
   const { themeTitle } = props;
-  
+
   return (
     <div className={classes.Home}>
       <MainFeaturedPost post={mainFeaturedPost} />
-      <Typography align="center" className={classes.postContent} variant="h6">
-        Our proven techniques used in the past projects give us confidence in
-        the quality and effectiveness of our design, development and deployment
-        processes.
-      </Typography>
+      <Grid
+        container
+        spacing={0}
+        direction="row"
+        justify="space-around"
+        alignItems="center"
+        className={classes.postContainer}
+      >
+        <Grid item xs={12} sm={12} md={6}>
+          <Typography
+            align="center"
+            className={classes.postContent}
+            variant="h6"
+          >
+            Our proven techniques used in the past projects give us confidence
+            in the quality and effectiveness of our design, development and
+            deployment processes.
+          </Typography>
+        </Grid>
+        <Grid item xs={12} sm={12} md={6}>
+          <img src={AboutUsBanner} alt="" />
+        </Grid>
+      </Grid>
 
       <Services
         title="Why Choose Cybros. Developers"
         description="CONVERT YOUR CONCEPT TO DIGITAL REALITY IN WEB or MOBILE SOFTWARE DEVELOPMENT, we create efficient and easy to use products that bring your ideas to life, delight your users and help you achieve your goals."
-      /> 
+      />
       <Portfolio
         title={`${themeTitle} Portfolio`}
         description="Recent Projects We've Completed For Our Clients"

@@ -2,7 +2,7 @@ export const themeTitle = "Cybros. Development";
 
 export const sections = [
   { title: "Home", url: "#home" },
-  { title: "Our Services", url: "#services" },
+  { title: "Services", url: "#services" },
   { title: "Portfolio", url: "#portfolio" },
   { title: "About Us", url: "#about" },
   { title: "Contact Us", url: "#contact" },
@@ -22,11 +22,11 @@ export const services = [
 export const technologies = [
   { title: "React-JS", img: "react.svg" },
   { title: "GraphQL", img: "gql.svg" },
+  { title: "Material-UI", img: "material.svg" },
   { title: "Node-JS", img: "nodejs.png" },
   { title: "Rails", img: "rails.png" },
   { title: "VUE", img: "vue.jpg" },
   { title: "WordPress", img: "WordPress.svg" },
-  { title: "Material-UI", img: "material.svg" },
   { title: "Bootstrap", img: "bootstrap-logo.png" },
   { title: "Storybook", img: "storybook.png" },
   { title: "Laravel", img: "laravel.min.svg" },

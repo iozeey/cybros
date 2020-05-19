@@ -32,14 +32,14 @@ export default function Carousel(props) {
   const classes = useCarouselStyles();
   const { title, technologies } = props;
   var settings = {
-    className: "center",
+    className: "logo-carousel",
     centerMode: true,
-    dots: true,
+    dots: false,
     infinite: true,
     centerPadding: "60px",
     speed: 500,
     slidesToShow: 5,
-    autoplay: true,
+    autoplay: false,
     nextArrow: <SampleNextArrow className="btn-next" />,
     prevArrow: <SamplePrevArrow className="btn-prev" />,
     responsive: [
@@ -49,15 +49,14 @@ export default function Carousel(props) {
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
-          dots: true,
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 960,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          initialSlide: 1,
         },
       },
       {
@@ -73,11 +72,9 @@ export default function Carousel(props) {
     <Container className={classes.mainCarousel} maxWidth="xl">
       <Slider title={title} {...settings}>
         {technologies.map((tech) => (
-          <div className="carousel-item">
             <div className="carousel-item-inner">
               <img src={require("assets/Technologies/" + tech.img)} alt={tech.title} />
             </div>
-          </div>
         ))}
       </Slider>
     </Container>

@@ -4,8 +4,11 @@ const useHomeStyles = makeStyles((theme) => ({
   Home: {
     backgroundColor: theme.palette.background.paper,
   },
+  postContainer: {
+    padding: theme.spacing(10, 0, 0),
+  },
   postContent: {
-    backgroundImage: "linear-gradient(to left,#60AFFF 10%,#4EF4BD 99%)",
+    // backgroundImage: "linear-gradient(to left,#60AFFF 10%,#4EF4BD 99%)",
     fontFamily: "monospace",
     [theme.breakpoints.up("sm")]: {
       padding: theme.spacing(8),
