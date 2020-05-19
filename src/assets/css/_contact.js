@@ -2,7 +2,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useContactStyles = makeStyles((theme) => ({
   root: {
-    backgroundImage: "linear-gradient(to left,#25a8c4 10%,#25a8c4 99%)",
+    // backgroundImage: "linear-gradient(to left,#25a8c4 10%,#25a8c4 99%)",
     marginBottom: theme.spacing(0),
     padding: theme.spacing(5, 0, 0),
     color: theme.palette.background.paper,
@@ -13,7 +13,8 @@ const useContactStyles = makeStyles((theme) => ({
     "& .content-bg": {
       [theme.breakpoints.up("md")]: {
       width: "100%",
-      borderTopLeftRadius: "8px",
+      borderTopLeftRadius: "10px",
+      borderBottomLeftRadius: "10px",
       padding: theme.spacing(12, 0),
       },
       [theme.breakpoints.down("md")]: {
@@ -37,8 +38,8 @@ const useContactStyles = makeStyles((theme) => ({
       [theme.breakpoints.up("md")]: {
         padding: theme.spacing(8, 0),
         marginRight: "-40px",
-        borderTopRightRadius: "8px",
-        borderBottomRightRadius: "8px",
+        borderTopRightRadius: "10px",
+        borderBottomRightRadius: "10px",
       },
       [theme.breakpoints.down("md")]: {
         padding: theme.spacing(6),

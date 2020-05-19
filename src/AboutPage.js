@@ -23,7 +23,7 @@ export default function About(props) {
             </Typography>
           </Grid>
           <Grid item xs={12} sm={12} md={6}>
-            <img src={AboutUsBanner} alt="" />
+            <img src={AboutUsBanner} alt="" className={classes.borderRadius} />
           </Grid>
         </Grid>
       </Container>
