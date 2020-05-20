@@ -10,6 +10,7 @@ import useHomeStyles from "./assets/css/_home";
 import { mainFeaturedPost } from "./components/theme/dataset";
 import Grid from "@material-ui/core/Grid";
 import AboutUsBanner from "assets/img/web-development.png";
+import { Container } from "@material-ui/core";
 
 export default function Home(props) {
   const classes = useHomeStyles();
@@ -18,6 +19,7 @@ export default function Home(props) {
   return (
     <div className={classes.Home}>
       <MainFeaturedPost post={mainFeaturedPost} />
+      <Container fixed>
       <Grid
         container
         spacing={0}
@@ -46,7 +48,10 @@ export default function Home(props) {
             description="CONVERT YOUR CONCEPT TO DIGITAL REALITY IN WEB or MOBILE SOFTWARE DEVELOPMENT, we create efficient and easy to use products that bring your ideas to life, delight your users and help you achieve your goals."
           />
         </Grid>
+        <Grid item xs={12}></Grid>
+        <Grid item xs={12}></Grid>
       </Grid>
+      </Container>
 
       <Portfolio
         title={`${themeTitle} Portfolio`}
@@ -56,6 +61,7 @@ export default function Home(props) {
         title={`About ${themeTitle}`}
         description="Cybros's mission is to convert thoughts into computer world and make them automate. Cybros developer specializes in the research and development of innovative Business Intelligence solutions."
       />
+      
       <Contact
         title="Contact Us"
         description="Fill out the form and our team will be in touch with you promptly. Thank you for your interest!

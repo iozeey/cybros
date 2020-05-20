@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 const useAboutUsStyles = makeStyles((theme) => ({
   root: {
     // backgroundImage: "linear-gradient(to left,#25a8c4 10%,#25a8c4 99%)",
-    padding: theme.spacing(8, 0, 0),
+    padding: theme.spacing(10, 0, 0),
   },
   borderRadius: {
     borderRadius: "10px",

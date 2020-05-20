@@ -18,6 +18,8 @@ const usePortfolioStyles = makeStyles((theme) => ({
     backgroundPosition: "center",
     color: theme.palette.background.paper,
     padding: theme.spacing(10, 0),
+    // margin: theme.spacing(0, "auto"),
+    // width: "95%",
   },
   postContent: {
     [theme.breakpoints.up("sm")]: {

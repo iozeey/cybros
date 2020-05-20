@@ -8,7 +8,7 @@ const useServicesStyles = makeStyles((theme) => ({
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
-    padding: theme.spacing(0, 0, 10),
+    padding: theme.spacing(10, 0),
     // color: theme.palette.background.paper,
   },
   postContent: {

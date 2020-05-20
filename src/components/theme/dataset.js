@@ -15,9 +15,9 @@ export const services = [
   { title: "Web Design & Development", img: "web.jpg" },
   { title: "Security & API Solution", img: "security.jpg" },
   { title: "Automation", img: "AutomationTestingProcess-1.png" },
-  { title: "Mobile Solution", img: "iPad-Application-meridian-uae.jpg" },
+  { title: "Mobile Solution", img: "responsive-design.jpg" },
   { title: "Content Maker", img: "write.jpg" },
-  { title: "Digital Marketing", img: "responsive-design.jpg" },
+  { title: "Digital Marketing", img: "applications.png" },
 ];
 export const technologies = [
   { title: "React-JS", img: "react.svg" },
