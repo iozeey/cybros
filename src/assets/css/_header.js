@@ -14,6 +14,10 @@ const useHeaderStyles = makeStyles((theme) => ({
   toolbarLogo: {
     flex: 1,
     display: "flex",
+    padding: theme.spacing(3, 0,3,0),
+    [theme.breakpoints.down("xs")]: {
+      justifyContent: "center"
+    },
   },
   toolbarSecondary: {
     justifyContent: "space-between",

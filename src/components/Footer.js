@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Link from "@material-ui/core/Link";
-import logo from "assets/img/nextlogo.png";
 function Copyright(props) {
   const { title } = props;
   return (
@@ -30,7 +29,6 @@ export default function Footer(props) {
 
   return (
     <footer className={classes.root}>
-      <img src={logo} alt={themeTitle} title={themeTitle} />
       <hr />
       <Typography
         variant="subtitle1"

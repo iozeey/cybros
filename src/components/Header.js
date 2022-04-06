@@ -5,7 +5,7 @@ import Grid from "@material-ui/core/Grid";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Link from "@material-ui/core/Link";
-import logo from "assets/img/nextlogo.png";
+import logo from "assets/img/cybros-logo-i.png";
 import useHeaderStyles from "../assets/css/_header";
 
 export default function Header(props) {
