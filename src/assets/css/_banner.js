@@ -1,27 +1,18 @@
 import { makeStyles } from "@material-ui/core/styles";
 
 const useBannerStyles = makeStyles((theme) => ({
-  mainFeaturedPost: {
+  mainBanner: {
     position: "relative",
     backgroundColor: theme.palette.grey[800],
     color: theme.palette.common.white,
-    // marginBottom: theme.spacing(6),
     paddingTop: theme.spacing(10),
-    backgroundImage: `url(${require("../img/bnr1.jpg")})`,
+    backgroundImage: `url(${require("../img/tech.jpeg")})`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     borderRadius: 0,
   },
-  overlay: {
-    position: "absolute",
-    top: 0,
-    bottom: 0,
-    right: 0,
-    left: 0,
-    backgroundColor: "rgba(0,0,0,.3)",
-  },
-  mainFeaturedPostContent: {
+  textContainer: {
     position: "relative",
     fontFamily: "vester-light",
     [theme.breakpoints.up("sm")]: {
@@ -33,9 +24,29 @@ const useBannerStyles = makeStyles((theme) => ({
   },
   title: {
     fontFamily: "vester-poster",
+    textShadow: '-1px 1px 2px #000, 1px 1px 5px #000, 1px -1px 0 #000, -1px -1px 0 #000',
     [theme.breakpoints.down("sm")]: {
       fontSize: '2rem',
-      borderBottom: "1px dashed #fff",
+      paddingTop: theme.spacing(4),
+      paddingBottom: theme.spacing(2),
+      marginBottom: theme.spacing(2),
+    },
+  },
+  subTitle: {
+    fontFamily: "vester-poster",
+    textShadow: '-1px 1px 2px #000, 1px 1px 5px #000, 1px -1px 0 #000, -1px -1px 0 #000',
+    [theme.breakpoints.down("sm")]: {
+      fontSize: '2rem',
+      paddingBottom: theme.spacing(2),
+      marginBottom: theme.spacing(2),
+    },
+  },
+  reason: {
+    color: "#4df4bc",
+    fontFamily: "vester-poster",
+    textShadow: '-1px 1px 2px #000, 1px 1px 5px #000, 1px -1px 0 #000, -1px -1px 0 #000',
+    [theme.breakpoints.down("sm")]: {
+      fontSize: '1.4rem',
       paddingBottom: theme.spacing(2),
       marginBottom: theme.spacing(2),
     },

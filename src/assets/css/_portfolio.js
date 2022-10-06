@@ -1,7 +1,18 @@
-import { makeStyles } from "@material-ui/core/styles";
-import banner from "../img/orange-banner.png";
+import { makeStyles } from '@material-ui/core/styles';
+import getCommonStyles from './_common';
 
 const usePortfolioStyles = makeStyles((theme) => ({
+  ...getCommonStyles(theme),
+  sectionTitle:{
+    ...getCommonStyles(theme).sectionTitle,
+    color: 'white',
+    textShadow: 'none',
+  },
+  sectionDescription:{
+    ...getCommonStyles(theme).sectionTitle,
+    color: 'white',
+    textShadow: 'none',
+  },
   paper: {
     position: 'absolute',
     width: 400,
@@ -11,49 +22,34 @@ const usePortfolioStyles = makeStyles((theme) => ({
     padding: theme.spacing(2, 4, 3),
   },
   root: {
-    // backgroundColor: "#FB9E33",
-    backgroundImage: `url(${banner})`,
-    backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: "center",
-    color: theme.palette.background.paper,
-    padding: theme.spacing(10, 0),
-    // margin: theme.spacing(0, "auto"),
-    // width: "95%",
+    backgroundColor: '#FB9E33',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    color: theme.palette.text.primary,
+    // backgroundImage: "linear-gradient(0deg, #fff 0%, #16506C 100%)",
+    backgroundImage: 'linear-gradient(to left,#091930 10%,#132C40 99%)',
+    // borderRadius: '10%',
+    // marginTop: '-30px',
+    ...getCommonStyles(theme).sectionContainer,
   },
-  postContent: {
-    [theme.breakpoints.up("sm")]: {
+  portfolioContent: {
+    [theme.breakpoints.up('sm')]: {
       padding: theme.spacing(0, 8, 8),
     },
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.down('sm')]: {
       padding: theme.spacing(2),
     },
   },
-  mainTitle: {
-    fontFamily: "vester-medium",
-    [theme.breakpoints.down("sm")]: {
-      fontSize: "1.25rem",
-      lineHeight: "1.5",
-      borderBottom: "1px dashed #fff",
-      paddingBottom: theme.spacing(2),
-      marginBottom: theme.spacing(2),
-    },
-  },
-  description: {
-    fontFamily: "monospace",
-  },
   portfolioItem: {
-    [theme.breakpoints.up("sm")]: {
+    [theme.breakpoints.up('sm')]: {
       padding: theme.spacing(4),
     },
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.down('sm')]: {
       padding: theme.spacing(4),
     },
   },
   media: {
-    height: 0,
-    backgroundSize: "contain",
-    paddingTop: "36.25%", // 16:9
+    backgroundSize: 'contain',
   },
 }));
 export default usePortfolioStyles;

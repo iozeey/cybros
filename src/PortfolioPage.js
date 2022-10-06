@@ -21,8 +21,8 @@ export default function Portfolio(props) {
           alignItems="center"
         >
           <Grid item xs={12}>
-            <div className={classes.postContent}>
-              <Typography variant="h4" align="center" className={classes.mainTitle}>
+            <div className={classes.portfolioContent}>
+              <Typography variant="h4" align="center" className={classes.sectionTitle}>
                 {title}
               </Typography>
               <Typography
@@ -30,7 +30,7 @@ export default function Portfolio(props) {
                 component="p"
                 color="inherit"
                 paragraph
-                className={classes.description}
+                className={classes.sectionDescription}
               >
                 {description}
               </Typography>

@@ -1,9 +1,6 @@
 import { makeStyles } from "@material-ui/core/styles";
-
 const useCarouselStyles = makeStyles((theme) => ({
   mainCarousel: {
-    backgroundColor: "rgba(0,0,0,.3)",
-    padding: theme.spacing(6, 0, 12),
     "& .slick-prev": {
       left: "35px",
     },
@@ -25,13 +22,13 @@ const useCarouselStyles = makeStyles((theme) => ({
       color: "#333",
       lineHeight: 3,
     },
-    "& .slick-current": {
-      transform: "scale(1.20)",
-    },
-    "& .slick-current div.carousel-item-inner": {
-      boxShadow: "0 0 4px 0 #000",
-      opacity: 1,
-    },
+    // "& .slick-current": {
+    //   transform: "scale(1.20)",
+    // },
+    // "& .slick-current div.carousel-item-inner": {
+    //   boxShadow: "0 0 4px 0 #000",
+    //   opacity: 1,
+    // },
     "& .slick-center": {
       position: "relative",
       zIndex: 1,
@@ -42,7 +39,7 @@ const useCarouselStyles = makeStyles((theme) => ({
       maxWidth: "calc(100% - 20px)",
     },
     "& div.carousel-item": {
-      //   margin: theme.spacing(2),
+        margin: theme.spacing(2),
     },
     "& div.carousel-item-inner": {
       maxWidth: "230px",
@@ -50,7 +47,6 @@ const useCarouselStyles = makeStyles((theme) => ({
       position: "relative",
       display: "flex !important",
       alignItems: "center",
-      opacity: 0.75,
       color: "#333",
       borderRadius: "10px",
       backgroundColor: theme.palette.background.paper,

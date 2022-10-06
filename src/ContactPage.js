@@ -8,11 +8,11 @@ import useContactStyles from "./assets/css/_contact";
 
 export default function Contact(props) {
   const classes = useContactStyles();
-  const { description, title } = props;
+  const { description, title, thanks, email } = props;
 
   return (
     <div id="contact" className={classes.root}>
-      <Container className={classes.root} maxWidth="false">
+      <Container className={classes.root}>
         <Grid
           container
           direction="row"
@@ -23,17 +23,33 @@ export default function Contact(props) {
           <Grid item xs={12} sm={12} md={6} className={classes.contactLeft}>
             <div className="content-bg">
               <div className="content-inner">
-                <Typography variant="h2" align="left" className={classes.title}>
+                <Typography variant="h2" align="left" className={classes.sectionTitle}>
                   {title}
                 </Typography>
                 <Typography
                   component="p"
                   variant="subtitle1"
                   align="left"
-                  className={classes.description}
+                  className={classes.sectionDescription}
                 >
                   {description}
                 </Typography>
+                <Typography
+                  component="p"
+                  variant="subtitle1"
+                  align="left"
+                  className={classes.sectionDescription}
+                >
+                  {email}
+                </Typography>
+                <Typography
+                  component="p"
+                  variant="subtitle1"
+                  align="left"
+                  className={classes.sectionDescription}
+                >
+                  {thanks}
+                </Typography>               
               </div>
             </div>
           </Grid>

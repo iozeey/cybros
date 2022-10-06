@@ -25,7 +25,7 @@ export default function Header(props) {
           <Grid item md={6} sm={4} xs={12}>
             <Toolbar className={classes.toolbar}>
               <div className={classes.toolbarLogo}>
-                <img src={logo} alt={title} height="60" />
+                <img src={logo} alt={title} height="40" />
               </div>
             </Toolbar>
           </Grid>

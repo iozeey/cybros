@@ -110,5 +110,9 @@ export const palette = {
   },
   text: {
     primary: colors.black,
+    white: colors.white
   },
+  background:{
+    paper: '#f8f8f8'
+  }
 }

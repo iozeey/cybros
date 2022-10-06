@@ -13,7 +13,7 @@ function App() {
         <Home themeTitle={themeTitle} />
         <Footer
           themeTitle={themeTitle}
-          description="All Rights Reserved | Powered by Cybros Developers | Dynamic solution provider"
+          description="All Rights Reserved | Powered by Cybros. Dev <Dynamic solution provider>"
         />
     </div>
   );

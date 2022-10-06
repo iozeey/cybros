@@ -29,7 +29,7 @@ export default function Services(props) {
                 image={require("assets/Services/" + post.img)}
                 title={post.title}
               />
-              <CardActions className={classes.titleBg} disableSpacing>
+              <CardActions className={classes.serviceTitle} disableSpacing>
                 <Typography className={classes.title} variant="subtitle2">
                   {post.title}
                 </Typography>

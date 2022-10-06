@@ -32,14 +32,15 @@ export default function Carousel(props) {
   const classes = useCarouselStyles();
   const { title, technologies } = props;
   var settings = {
-    className: "logo-carousel",
-    centerMode: true,
+    // className: "logo-carousel",
+    // centerMode: true,
     dots: false,
-    infinite: true,
-    centerPadding: "60px",
-    speed: 500,
+    // infinite: true,
+    // centerPadding: "60px",
     slidesToShow: 5,
-    autoplay: false,
+    slidesToScroll: 5,
+    // speed: 300,
+    autoplay: true,
     nextArrow: <SampleNextArrow className="btn-next" />,
     prevArrow: <SamplePrevArrow className="btn-prev" />,
     responsive: [

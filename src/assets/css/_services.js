@@ -1,17 +1,26 @@
 import { makeStyles } from "@material-ui/core/styles";
+import getCommonStyles from './_common';
 
 const useServicesStyles = makeStyles((theme) => ({
+  ...getCommonStyles(theme),
   root: {
-    // backgroundImage: `url(${require("assets/img/AdobeStock_298681782.jpeg")})`,
-    // backgroundImage: "linear-gradient(to left,#60AFFF 10%,#301140 99%)",
-    // backgroundImage: "linear-gradient(to left,#598797 10%,#132C40 99%)",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
-    padding: theme.spacing(10, 0),
-    // color: theme.palette.background.paper,
+    backgroundImage: 'linear-gradient(0deg, #fff 10%, #6dd5ed 100%)',
+    ...getCommonStyles(theme).sectionContainer,
   },
-  postContent: {
+  serviceContainer: {
+    [theme.breakpoints.down("sm")]: {
+      padding: theme.spacing(2, 2, 0),
+    },
+    padding: theme.spacing(8, 4, 0),
+    margin: "50px auto 0",
+    position: "relative",
+    width:" 95%",
+    borderRadius: "10px",
+  },
+  serviceContent: {
     [theme.breakpoints.up("sm")]: {
       padding: theme.spacing(0, 8, 8),
     },
@@ -19,25 +28,7 @@ const useServicesStyles = makeStyles((theme) => ({
       padding: theme.spacing(2),
     },
   },
-  mainTitle: {
-    fontFamily: "vester-medium",
-    [theme.breakpoints.down("sm")]: {
-      fontSize: "1.25rem",
-      lineHeight: "1.5",
-      borderBottom: "1px dashed #fff",
-      paddingBottom: theme.spacing(2),
-      marginBottom: theme.spacing(2),
-
-    },
-  },
-  title: {
-    flex: 1,
-    fontFamily: "vester-medium",
-  },
-  description: {
-    fontFamily: "monospace",
-  },
-  titleBg: {
+  serviceTitle: {
     backgroundImage: "linear-gradient(to left,#175370 10%,#091930 99%);",
     color: theme.palette.background.paper,
   },

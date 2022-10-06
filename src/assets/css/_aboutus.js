@@ -1,24 +1,16 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from '@material-ui/core/styles';
+import getCommonStyles from './_common';
 
 const useAboutUsStyles = makeStyles((theme) => ({
+  ...getCommonStyles(theme),
   root: {
-    // backgroundImage: "linear-gradient(to left,#25a8c4 10%,#25a8c4 99%)",
-    padding: theme.spacing(10, 0, 0),
-  },
-  borderRadius: {
-    borderRadius: "10px",
-  },
-  title: {
-    fontFamily: "vester-medium",
-    [theme.breakpoints.down("sm")]: {
-      fontSize: '2rem',
-      borderBottom: "1px dashed #fff",
-      paddingBottom: theme.spacing(2),
-      marginBottom: theme.spacing(2),
-    },
-  },
-  description: {
-    fontFamily: "monospace",
+    // backgroundImage: "linear-gradient(to left,#4df4bc 0%,#25a8c4 51%)",
+    // backgroundImage: "linear-gradient(to left,#091930 10%,#132C40 99%)",
+    // backgroundImage: `url(${require("../img/tech.jpeg")})`,
+    borderRadius: 0,
+    backgroundColor: '#2ac4ea',
+    backgroundPosition: 'center',
+    ...getCommonStyles(theme).sectionContainer,
   },
 }));
 export default useAboutUsStyles;
