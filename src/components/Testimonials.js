@@ -8,32 +8,30 @@ import useTestimonialsStyles from './../assets/css/_testimonial';
 
 const data = [
   {
-    avatar: `https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample29.jpg`,
+    avatar: require('assets/people/t-1.jpg'),
     name: 'Shay Chin',
     designation: 'CTO of TechnoGeeks, LLC',
     message:
-      'This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like.',
+      `Cybros. Dev has the best developers. I've been using their services for several years now.`,
   },
   {
-    avatar: `https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample24.jpg`,
-    name: 'Shay Chin',
-    designation: 'CTO of TechnoGeeks, LLC',
+    avatar: require('assets/people/t-2.jpg'),
+    name: 'Jawad Ahmad',
+    designation: 'CTO of NeroTech',
     message:
-      'This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like.',
+      'Really professional, high quality content and a pleasure to work with. Thank you!',
   },
   {
-    avatar: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample1.jpg',
-    name: 'Shay Chin',
-    designation: 'CTO of TechnoGeeks, LLC',
-    message: `Calvin: Sometimes when I'm talking with others, my words can't keep up with my thoughts. I wonder why we think
-      faster than we speak. Hobbes: Probably so we can think twice`,
+    avatar: require('assets/people/t-3.jpeg'),
+    name: 'Zoe Ma',
+    designation: 'Business owner',
+    message: `The Cybros. Dev team has been an extraordinary service provider and really boost my business`,
   },
   {
-    avatar: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample1.jpg',
-    name: 'Shay Chin',
-    designation: 'CTO of TechnoGeeks, LLC',
-    message: `Calvin: Sometimes when I'm talking with others, my words can't keep up with my thoughts. I wonder why we think
-      faster than we speak. Hobbes: Probably so we can think twice`,
+    avatar: require('assets/people/t-4.png'),
+    name: 'Jack',
+    designation: 'Business owner',
+    message: `Hired them for support now I'm permanently using their services to enhance my productivity`,
   },
 ];
 
