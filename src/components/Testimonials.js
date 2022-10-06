@@ -23,7 +23,7 @@ const data = [
   },
   {
     avatar: require('assets/people/t-3.jpeg'),
-    name: 'Zoe Ma',
+    name: 'Edward',
     designation: 'Business owner',
     message: `The Cybros. Dev team has been an extraordinary service provider and really boost my business`,
   },
