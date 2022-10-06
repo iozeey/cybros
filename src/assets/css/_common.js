@@ -9,7 +9,6 @@ const getCommonStyles = (theme) => ({
     textShadow: '1px 1px 14px white',
     [theme.breakpoints.down('sm')]: {
       fontSize: '2rem',
-      borderBottom: '1px dashed #fff',
       paddingBottom: theme.spacing(2),
       marginBottom: theme.spacing(2),
     },

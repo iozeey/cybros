@@ -2,12 +2,12 @@ export const themeTitle = 'Cybros. Dev';
 
 export const sections = [
   { title: 'Home', url: '#home' },
+  { title: 'About', url: '#about' },
   { title: 'Services', url: '#services' },
   { title: 'Portfolio', url: '#portfolio' },
-  { title: 'About', url: '#why' },
   { title: 'Clients', url: '#testimonial' },
   // { title: 'About Us', url: '#about' },
-  { title: 'Contact Us', url: '#contact' },
+  { title: 'Contact Us', url: '#contact', type: 'btn', className: 'MuiButton-contained MuiButton-containedPrimary MuiButton-root' },
 ];
 export const mainBanner = {
   title: 'To Bring your ideas into Reality',

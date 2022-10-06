@@ -9,6 +9,7 @@ const useServicesStyles = makeStyles((theme) => ({
     backgroundPosition: "center",
     backgroundImage: 'linear-gradient(0deg, #fff 10%, #6dd5ed 100%)',
     ...getCommonStyles(theme).sectionContainer,
+    // padding: theme.spacing(23, 0, 10),
   },
   serviceContainer: {
     [theme.breakpoints.down("sm")]: {

@@ -3,8 +3,6 @@ figure.testimonialCard {
   position: relative;
   overflow: hidden;
   margin: 0px;
-  min-width: 220px;
-  max-width: 310px;
   width: 100%;
   color: #333;
   text-align: left;

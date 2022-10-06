@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-// import About from './AboutPage';
+import About from './AboutPage';
 import useHomeStyles from './assets/css/_home';
 import MainBanner from './components/MainBanner';
 import ScrollTop from './components/ScrollUp';
@@ -19,15 +19,21 @@ export default function Home(props) {
   return (
     <div className={classes.Home}>
       <MainBanner post={mainBanner} />
-
+      <About
+        title={`About ${themeTitle}`}
+        description="Cybros's mission is to convert thoughts into computer world and make them automate. Cybros. Dev specializes in the research and development of innovative Business Intelligence solutions."
+      />
       <Services
         title="Services We Provide"
         description="CONVERT YOUR CONCEPT TO DIGITAL REALITY IN WEB or MOBILE SOFTWARE DEVELOPMENT, we create efficient and easy to use products that bring your ideas to life, delight your users and help you achieve your goals."
       />
 
       <Portfolio title={`${themeTitle} Portfolio`} description="Recent Projects We've Completed For Our Clients" />
-
+    
       <WhyChooseUs />
+    
+  
+
 
       <Testimonial />
 
@@ -38,11 +44,6 @@ export default function Home(props) {
         thanks="Thank you for your interest!"
       />
 
-{/* <About
-        title={`About ${themeTitle}`}
-        description="Cybros's mission is to convert thoughts into computer world and make them automate. Cybros developer specializes in the research and development of innovative Business Intelligence solutions."
-      />
-       */}
       <SocialLinks />
 
       <ScrollTop />

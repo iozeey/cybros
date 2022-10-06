@@ -8,9 +8,9 @@ const SocialLinks = () => {
       <IconButton href="https://www.facebook.com/cybros.dev">
         <Facebook />
       </IconButton>
-      <IconButton>
+      {/* <IconButton>
         <Twitter />
-      </IconButton>
+      </IconButton> */}
       <IconButton href="https://www.linkedin.com/company/cybros-dev">
         <LinkedIn />
       </IconButton>

@@ -11,15 +11,13 @@ const data = [
     avatar: require('assets/people/t-1.jpg'),
     name: 'Shay Chin',
     designation: 'CTO of TechnoGeeks, LLC',
-    message:
-      `Cybros. Dev has the best developers. I've been using their services for several years now.`,
+    message: `Cybros. Dev has the best developers. I've been using their services for several years now.`,
   },
   {
     avatar: require('assets/people/t-2.jpg'),
     name: 'Jawad Ahmad',
     designation: 'CTO of NeroTech',
-    message:
-      'Really professional, high quality content and a pleasure to work with. Thank you!',
+    message: 'Really professional, high quality content and a pleasure to work with. Thank you!',
   },
   {
     avatar: require('assets/people/t-3.jpeg'),
@@ -41,22 +39,22 @@ const Testimonials = () => {
   return (
     <div id="testimonial" className={classes.root}>
       <Container fixed>
+        <Grid item xs={12}>
+          <Typography variant="h4" align="center" className={classes.sectionTitle}>
+            Some words from our Clients
+          </Typography>
+        </Grid>
+
         <Grid
           container
           direction="row"
-          spacing={2}
+          spacing={1}
           justify="flex-start"
           alignItems="flex-start"
           className={classes.testimonialContainer}
         >
-          <Grid item xs={12}>
-            <Typography variant="h4" align="center" className={classes.sectionTitle}>
-              Some words from our Clients
-            </Typography>
-          </Grid>
-
           {data.map((item) => (
-            <Grid item md={3} xs={1} sm={2}>
+            <Grid item lg={3} xs={12} md={4} sm={6}>
               <Card>
                 <CardContent>
                   <figure class="testimonialCard">

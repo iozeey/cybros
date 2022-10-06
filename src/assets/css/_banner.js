@@ -11,6 +11,7 @@ const useBannerStyles = makeStyles((theme) => ({
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     borderRadius: 0,
+    marginBottom: '-20px'
   },
   textContainer: {
     position: "relative",
