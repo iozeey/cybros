@@ -4,6 +4,8 @@ export const sections = [
   { title: 'Home', url: '#home' },
   { title: 'Services', url: '#services' },
   { title: 'Portfolio', url: '#portfolio' },
+  { title: 'About', url: '#why' },
+  { title: 'Clients', url: '#testimonial' },
   // { title: 'About Us', url: '#about' },
   { title: 'Contact Us', url: '#contact' },
 ];

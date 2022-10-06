@@ -13,7 +13,7 @@ const WhyChooseUs = (props) => {
   const classes = useWhyChooseUs();
 
   return (
-    <div id="about" className={classes.root}>
+    <div id="why" className={classes.root}>
       <Container fixed>
         <Grid container spacing={0} direction="row" justify="space-around" alignItems="center" id="services">
           <Grid item xs={12}>
