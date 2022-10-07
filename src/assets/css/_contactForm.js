@@ -2,11 +2,8 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useContactFormStyles = makeStyles((theme) => ({
   root: {
-    [theme.breakpoints.up("sm")]: {
-      padding: theme.spacing(0, 12),
-    },
     [theme.breakpoints.down("sm")]: {
-      padding: theme.spacing(4, 0),
+      padding: theme.spacing(0, 0),
     },
   },
   rootButton: {

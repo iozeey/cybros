@@ -5,7 +5,6 @@ const useAboutUsStyles = makeStyles((theme) => ({
   ...getCommonStyles(theme),
   root: {
     ...getCommonStyles(theme).sectionContainer,
-    // backgroundImage: `url(${require("../img/mission.png")})`,
     backgroundColor: 'white',
     backgroundPosition: 'center',
     position: 'relative',
@@ -14,14 +13,6 @@ const useAboutUsStyles = makeStyles((theme) => ({
     left: '10%',
     backgroundSize: 'contain',
     backgroundRepeat: 'no-repeat'
-  },
-  overlay: {
-    position: "absolute",
-    top: 0,
-    bottom: 0,
-    right: 0,
-    left: 0,
-    backgroundColor: "rgba(0,0,0,.3)",
   },
 }));
 export default useAboutUsStyles;

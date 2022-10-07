@@ -1,5 +1,5 @@
 import { IconButton } from '@material-ui/core';
-import { Facebook, LinkedIn, Twitter } from '@material-ui/icons';
+import { Facebook, LinkedIn } from '@material-ui/icons';
 import React from 'react';
 
 const SocialLinks = () => {

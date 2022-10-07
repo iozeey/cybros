@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Grid from '@material-ui/core/Grid';
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
-import CardActionArea from "@material-ui/core/CardActionArea";
+import CardActionArea from '@material-ui/core/CardActionArea';
 import usePortfolioStyles from '../../assets/css/_portfolio';
 // import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css'; // This only needs to be imported once in your app
@@ -25,7 +25,7 @@ export default function PortfolioItem(props) {
   return (
     <Grid container spacing={4} direction="row" justify="space-around" alignItems="center">
       {portfolioItem.map((portfolio) => (
-        <Grid item md={3} sm={6} xs={6}>
+        <Grid item md={3} sm={6} xs={12}>
           <CardActionArea component="a" href={portfolio.link} target="_blank">
             <Card className={classes.portfolioItem}>
               <CardMedia
