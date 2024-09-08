@@ -3,7 +3,7 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import PropTypes from 'prop-types';
 import React from 'react';
-import useAboutUsStyles from './assets/css/_aboutUs';
+import useAboutUsStyles from 'assets/css/_aboutUs';
 
 const About = (props) => {
   const classes = useAboutUsStyles();
