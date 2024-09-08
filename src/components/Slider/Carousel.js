@@ -89,7 +89,8 @@ export default function Carousel(props) {
       <Slider title={title} {...settings}>
         {technologies.map((tech) => (
             <div className="carousel-item-inner">
-              <img src={require("assets/Technologies/" + tech.img)} alt={tech.title} />
+              <img src={`/Technologies/${tech.img}`} alt={tech.title} />
+
             </div>
         ))}
       </Slider>
