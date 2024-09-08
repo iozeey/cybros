@@ -26,7 +26,7 @@ export const technologies = [
   { title: 'Rails', img: 'rails.png' },
   { title: 'DJango', img: 'django.svg' },
   { title: 'React-JS', img: 'react.svg' },
-  { title: 'WordPress', img: 'wordpress.svg' },
+  // { title: 'WordPress', img: 'wordpress.svg' },
   { title: 'Laravel', img: 'laravel.min.svg' },
   // { title: 'GraphQL', img: 'gql.svg' },
   { title: 'Material-UI', img: 'material.svg' },

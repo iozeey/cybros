@@ -30,8 +30,7 @@ function SamplePrevArrow(props) {
 
 export default function Carousel(props) {
   const classes = useCarouselStyles();
-  const { title } = props;
-  const technologies = [];
+  const { title, technologies } = props;
   var settings = {
     // className: "logo-carousel",
     // centerMode: true,
